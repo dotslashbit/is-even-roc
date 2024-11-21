@@ -1,8 +1,8 @@
 module [IsEven]
 
-# Returns Bool.true if the number is even
-isEven : Num a -> Bool
-isEven = \num ->
-    when Num.rem num 2 is
-        0 -> Bool.true
-        _ -> Bool.false
+printNum = \num ->
+    Stdout.line! (Num.toStr num)
+    if num % 2 == 0 then
+        Stdout.line! "Even"
+    else
+        Stdout.line! "Odd"
