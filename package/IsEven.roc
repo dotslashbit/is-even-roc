@@ -1,4 +1,9 @@
-module [IsEven]
+module IsEven
+
+interface IsEven
+    exposes [printNum]
+    imports []
+
 
 printNum = \num ->
     Stdout.line! (Num.toStr num)
