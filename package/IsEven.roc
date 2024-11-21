@@ -1,4 +1,4 @@
-module [IsEven]
+module [printNum]
 
 printNum = \num ->
     Stdout.line! (Num.toStr num)
