@@ -1,5 +1,7 @@
 module [printNum]
 
+import IsEven exposing [IsEven]
+
 printNum = \num ->
     Stdout.line! (Num.toStr num)
     if num % 2 == 0 then
